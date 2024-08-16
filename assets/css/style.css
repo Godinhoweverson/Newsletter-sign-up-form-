@@ -11,6 +11,22 @@ body{
     flex-direction: column;
     min-height: 100vh;
     background-color: hsl(234, 29%, 20%);
+    font-family: "Roboto", sans-serif;
+}
+
+h1{
+    font-size: 56px;
+    color: hsl(234, 29%, 20%);
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+p{
+    font-size: 16px;
+    margin-bottom: 24px;
+    color:hsl(235, 18%, 26%);
+    font-weight: 400;
+
 }
 
 main{
@@ -21,17 +37,81 @@ main{
     height: 641px;
     width: 928px;
     background-color: white;
+    border-radius: 36px;
 }
 
 #container-left{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+.sub-container-left{
     height: 446px;
     width: 376px;
 }
+.paragraph{
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-bottom: 10px;
 
+}
+.icon-check {
+    width: 21px;
+}
+
+.paragraph p{
+    margin-left: 8px;
+    width: 90%;
+}
+
+#container-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.image-box{
+    height: 593px;
+    width: 400px;
+}
+
+form{
+    display: flex;
+    align-items: flex-start;
+    justify-content:flex-start;
+    flex-direction: column;
+}
+
+label{
+    font-size: 12px;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+
+}
+
+input{
+    height: 56px;
+    width: 376px;
+    border: 1px solid hsl(231, 7%, 60%);
+    border-radius: 10px;
+    margin:12px 0 12px 0;
+}
+
+button{
+    margin-top: 12px;
+    height: 56px;
+    width: 376px;
+    background-color:  hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
 #thanks-for-subscribing{
     display: none;
     background-color: white;
