@@ -12,25 +12,25 @@ body{
     min-height: 100vh;
     background-color: hsl(234, 29%, 20%);
     font-family: "Roboto", sans-serif;
+    color: hsl(234, 29%, 20%);
 }
 
 h1{
     font-size: 56px;
-    color: hsl(234, 29%, 20%);
     margin-bottom: 24px;
     font-weight: 700;
+    text-shadow: 0 3px 8px hsl(231, 7%, 60%);
 }
 
 p{
     font-size: 16px;
     margin-bottom: 24px;
-    color:hsl(235, 18%, 26%);
     font-weight: 400;
 
 }
 
 main{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: row;
@@ -58,13 +58,14 @@ main{
     justify-content: flex-start;
     flex-direction: row;
     margin-bottom: 10px;
+    height: 24px;
 
 }
 .icon-check {
     width: 21px;
 }
 
-.paragraph p{
+.paragraph p{ 
     margin-left: 8px;
     width: 90%;
 }
@@ -87,6 +88,7 @@ form{
     align-items: flex-start;
     justify-content:flex-start;
     flex-direction: column;
+    margin-top: 30px;
 }
 
 label{
@@ -97,11 +99,14 @@ label{
 }
 
 input{
+    display: flex;
     height: 56px;
-    width: 376px;
+    width: 94%;
     border: 1px solid hsl(231, 7%, 60%);
     border-radius: 10px;
     margin:12px 0 12px 0;
+    padding-left: 6%;
+    cursor: pointer;
 }
 
 button{
@@ -111,8 +116,41 @@ button{
     background-color:  hsl(234, 29%, 20%);
     color: hsl(0, 0%, 100%);
     border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
 }
-#thanks-for-subscribing{
+
+button:hover{
+    background: linear-gradient(90deg, hsl(4, 100%, 68%), hsl(4, 100%, 67%), hsl(4, 100%, 62%));
+    box-shadow: rgb(255, 98, 87, 1) 0px 8px 24px;
+}
+
+/* Invalid email style */
+/* .email-invalid{
     display: none;
+    height: 56px;
+    width: 94%;
+    border: 1px solid hsl(4, 100%, 67%);
+    border-radius: 10px;
+    margin:12px 0 12px 0;
+    padding-left: 6%;
+    background-color: rgba(255, 97, 85, 0.15)
+} */
+
+#thanks-for-subscribing{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 520px;
+    width: 504px;
+    border-radius: 36px;
     background-color: white;
+}
+
+.box-thanks-for-subscribing{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+    width: 376px;
 }

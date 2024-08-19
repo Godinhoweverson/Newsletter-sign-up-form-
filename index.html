@@ -41,7 +41,7 @@
             <label for="email">
               Email address
             </label>
-            <input id="email" name="email"  type="email" placeholder="email@company.com" >
+            <input class="email-invalid" id="email" name="email"  type="email" placeholder="email@company.com" >
             <span aria-live="polite" id="email-error"></span>
           <button>Subscribe to monthly newsletter</button>
         </form>
@@ -57,19 +57,15 @@
 
   <!-- Success message start -->
 <div id="thanks-for-subscribing">
-  <p>Icond</p>
-  <h1>Thanks for subscribing!</h1>
-  <p>
-    A confirmation email has been sent to ash@loremcompany.com. 
-    Please open it and click the button inside to confirm your subscription.
-  </p>
-  <button> Dismiss message</button>
-</div>
-
-  <!-- Success message end -->
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="box-thanks-for-subscribing">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon-check"  width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+    <h1>Thanks for subscribing!</h1>
+    <p>
+      A confirmation email has been sent to ash@loremcompany.com. 
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+    <button>Dismiss message</button>
   </div>
+</div>
 </body>
 </html>
