@@ -38,10 +38,12 @@
         </div>
  <!-- Sign-up form start -->
          <form id="form" novalidate>
+          <div id="label">
             <label for="email">
               Email address
             </label>
-            <input class="email-invalid" id="email" name="email"  type="email" placeholder="email@company.com" >
+          </div>
+            <input class="email-valid" id="email" name="email"  type="email" placeholder="email@company.com" >
             <span aria-live="polite" id="email-error"></span>
           <button>Subscribe to monthly newsletter</button>
         </form>
@@ -63,8 +65,9 @@
       A confirmation email has been sent to ash@loremcompany.com. 
       Please open it and click the button inside to confirm your subscription.
     </p>
-    <button id="btn-mobile">Dismiss message</button>
+    <button id="btn-dismiss-message">Dismiss message</button>
   </div>
 </div>
+<script src="assets/js/script.js"></script>
 </body>
 </html>

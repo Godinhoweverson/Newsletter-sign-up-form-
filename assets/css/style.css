@@ -30,7 +30,7 @@ p{
 }
 
 main{
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
@@ -105,11 +105,19 @@ input{
     display: flex;
     height: 56px;
     width: 94%;
-    border: 1px solid hsl(231, 7%, 60%);
     border-radius: 10px;
     margin:12px 0 12px 0;
     padding-left: 6%;
     cursor: pointer;
+}
+.email-valid{
+    border:1px solid hsl(231, 7%, 60%);
+    
+}
+/* Invalid email style */
+.email-invalid{
+    border: 1px solid hsl(4, 100%, 67%);
+    background-color: rgba(255, 97, 85, 0.15)
 }
 
 button{
@@ -128,20 +136,8 @@ button:hover{
     box-shadow: rgb(255, 98, 87, 1) 0px 8px 24px;
 }
 
-/* Invalid email style */
-/* .email-invalid{
-    display: none;
-    height: 56px;
-    width: 94%;
-    border: 1px solid hsl(4, 100%, 67%);
-    border-radius: 10px;
-    margin:12px 0 12px 0;
-    padding-left: 6%;
-    background-color: rgba(255, 97, 85, 0.15)
-} */
-
 #thanks-for-subscribing{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items:center;
     height: 520px;
@@ -151,7 +147,7 @@ button:hover{
 }
 
 .box-thanks-for-subscribing{
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items:flex-start;
     flex-direction: column;
@@ -221,7 +217,7 @@ button:hover{
         margin-top: 100px;
     }
 
-    #btn-mobile{
+    #btn-dismiss-message{
         margin-top: 200px;
     }
 
