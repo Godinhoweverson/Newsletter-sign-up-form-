@@ -6,11 +6,12 @@ const btnDimissMessage = document.getElementById('btn-dismiss-message')
 const input = document.querySelector('input')
 const label = document.getElementById('label')
 
-const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+const emailPattern = /^[a-zA-Z0-9]+[a-zA-Z0-9._%+-]*@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
+let validOn = true
 
 // BTN TO DEMISS THE MESSAGE AND BACK TO FORM
-const btn = (v) => {
+const btn = (label) => {
     btnDimissMessage.addEventListener('click', ()=>{
         main.style.display = 'flex';
         thanksForSubscribing.style.display = 'none';
@@ -18,14 +19,15 @@ const btn = (v) => {
         input.value = ''
         input.classList.remove('email-invalid')
         input.classList.add('email-valid')
-        v.innerHTML = ''
-        v.style.color = ''
+        label.innerHTML = ''
+        label.style.color = ''
     })
 }
 
 
 // fUNCTION USED TO CREATE A NEW LABEL ELEMENT
 const createLabel = () => {
+    validOn = false
     label.style.display = 'flex'
     label.style.justifyContent = 'space-between'
     label.style.width = '100%'
@@ -51,7 +53,10 @@ const eventSubmit = (e)=>{
     }else{
         input.classList.remove('email-valid')
         input.classList.add('email-invalid')
-        createLabel()
+        if(validOn){
+            createLabel()
+        }
+        
     }
 }
 
