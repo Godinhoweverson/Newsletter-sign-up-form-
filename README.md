@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub repository](https://github.com/Godinhoweverson/Newsletter-sign-up-form-)
-- Live Site URL: []( https://godinhoweverson.github.io/Newsletter-sign-up-form-/)
+- Live Site URL: [Website]( https://godinhoweverson.github.io/Newsletter-sign-up-form-/)
 
 ## My process
 
